@@ -34,7 +34,7 @@ products.forEach(element => {
     const button = document.createElement('button');
     button.textContent = "Presentear"
     button.addEventListener('click', (event) => {
-        window.location.replace(`https://wa.me//5521971564253?text=Gostaria de presentear você com ${element.description} que selecionei no seu sites de presentes`)
+        //window.location.replace(``)
     })
 
     newProd.appendChild(Prod)
