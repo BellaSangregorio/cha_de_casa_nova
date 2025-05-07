@@ -8,12 +8,10 @@ const products =  [
 ]
 
 async function getData(){
-    const data = await fetch('https://sheets.googleapis.com/v4/spreadsheets/1s6AqgQhT1L7LUftV26jGVg6DpGo8IW6uzVOG9NMVpOc')
+    const data = await fetch()
     
     console.log(await data.json())
 }
-
-getData()
 
 products.forEach(element => {
     const newProd = document.createElement('div');
