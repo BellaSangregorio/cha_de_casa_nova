@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: fonteViadinha;
-    src: url(https://bellasangregorio.github.io/cha_de_casa_nova/assets/fonts/adelia.otf);
+    src: url(/assets/fonts/adelia.otf);
 }
 
 *{
@@ -96,6 +96,7 @@ div.product-container{
     align-items: center;
     justify-content: center;
     position: relative;
+    max-width: 400px;
 }
 
 div.product-container > div.product{
@@ -135,8 +136,47 @@ div.product-container > div.product > button{
     border: none;
     color: white;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 div.product-container > div.product > button:hover{
     opacity: .7;
+}
+
+.gift-icon{
+    height: 20px;
+    fill: green;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1001px) {
+    header{
+        font-size: 20px;
+    }
+    div.main-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width: 801px) {
+    header{
+        font-size: 20px;
+    }
+    div.main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header{
+        font-size: 20px;
+    }
+    div.main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
