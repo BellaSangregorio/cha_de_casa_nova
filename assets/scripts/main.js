@@ -29,7 +29,8 @@ async function getData(){
         button_text.textContent = "Presentear"
 
         const button = document.createElement('button');
-        button.addEventListener('click', (event) => {
+        button.addEventListener('click', () => {
+            window.location.href = "https://nubank.com.br/cobrar/1dkv83/681e2e1e-8448-46f4-8875-53033b147cee"
         })
         
         newProd.appendChild(Prod)
